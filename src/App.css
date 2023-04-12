@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +35,171 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: #000;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.burger-icon{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 1rem;
+}
+
+.text-shadow{
+  text-shadow: 2px 2px 1px black;
+}
+
+.text-shadow-white{
+  text-shadow: 2px 2px 1px white;
+}
+
+.custom_drop{
+  display: none;  
+  margin-top: -300px;
+  transition: all 0.5s ease-in-out;
+} 
+
+.custom_bg{
+  background-color: #000;
+  z-index: 10;
+}
+
+@media(max-width: 970px){
+
+  .img_1{
+    display: none;
+  }
+
+  .custom_bg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5rem;
+  }
+
+
+}
+
+
+@media(max-width: 540px){
+
+  .custom-margin{
+    margin-left: 1rem;
+  } 
+
+  .custom_toggle{
+    display: none;
+  } 
+
+  .burger-icon{
+    display: flex;
+  }
+
+  .custom_drop{
+    display: flex;
+    margin-top: 49px;
+    flex-direction: column;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .img_1{
+    display: none;
+  }
+
+  .custom_bg{
+    padding-left: 4rem;
+  }
+
+}
+
+@media(max-width: 650px){
+
+    .custom_align{
+      width: 450px;
+      margin-left: -2rem;
+      font-weight: lighter;
+    }
+
+    .custom_align_2{
+      margin-left: -2rem;
+    }
+
+    .img_1{
+      display: none;
+    }
+
+    .custom_bg{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 7rem;
+    }
+
+}
+
+@media(max-width:498px){
+
+  .custom_align{
+    width: 420px;
+    margin-left: -2rem;
+    font-size: 16px;
+    font-weight: lighter;
+  }
+
+  .custom_align_2{
+    margin-left: -2rem;
+  }
+
+  .img_1{
+    display: none;
+  }
+
+
+}
+
+@media(max-width:458px){
+
+  .custom_align{
+    width: 360px;
+    margin-left: -2rem;
+    font-size: 16px;
+    font-weight: lighter;
+  }
+
+  .custom_align_2{
+    margin-left: -2rem;
+  }
+
+  .img_1{
+    display: none;
+  }
+
+  .custom_bg{
+    padding-left: 8rem;
+  }  
+
+}
+
+@media (max-width: 398px){
+
+  .custom_align{
+    width: 300px;
+  }
+
+  .text-shadow{
+    font-size: 35px;
+  }
+
 }
