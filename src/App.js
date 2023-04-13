@@ -2,6 +2,7 @@ import './App.css';
 import About from './components/About';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
+import Services from './components/Services';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Navbar logo="Webmagic" link_1="About" link_2="Services" link_3="Blog" link_4="Contact"/>
       <Hero/>
       <About id="about" />
-
+      <Services/>
     </div>
   );
 }
