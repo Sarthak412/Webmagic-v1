@@ -74,6 +74,7 @@ html{
 .custom_bg{
   background-color: #000;
   z-index: 10;
+  height: 70vh;
 }
 
 .custom_responsive{
@@ -82,6 +83,50 @@ html{
   /* grid-gap: 1rem; */
   row-gap: 3rem;
   column-gap: -80px;
+}
+
+.hover_effect{
+  position: relative;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+  /* border: 1px solid #666; */
+}
+
+.hover_effect:hover{
+  transform: scale(1.1);
+  box-shadow: 1px 1px 4px #222;
+  border: none;
+}
+
+.custom_width{
+  position: relative;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.custom_width:hover{
+  transform: scale(1.05);
+  box-shadow: 4px 4px 1px rgb(129 140 248);
+}
+
+@media(max-width: 1058px){
+
+  .custom_width{
+    width: 460px;
+  }
+
+}
+
+
+@media(max-width: 1028px){
+
+  .custom_grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+  }
+
 }
 
 
@@ -94,6 +139,7 @@ html{
     row-gap: 3rem;
     column-gap: -80px;
   }
+
 
 }
 
@@ -115,6 +161,13 @@ html{
     grid-template-columns: repeat(3, 1fr);
     /* grid-gap: 1rem; */
   }
+
+  .custom_grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 10px;
+  }
+
 
 }
 
@@ -190,6 +243,10 @@ html{
     place-items: center;
   }
 
+  .text-shadow-white{
+    padding-bottom: 3rem;
+  }
+
 }
 
 @media(max-width:498px){
@@ -209,6 +266,10 @@ html{
     display: none;
   }
 
+  .custom_width{
+    width: 400px;
+  }
+
 
 }
 
@@ -217,6 +278,10 @@ html{
   .custom_responsive{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .custom_width{
+    width: 400px;
   }
 
 }
@@ -242,6 +307,10 @@ html{
     padding-left: 8rem;
   }  
 
+  .custom_width{
+    width: 350px;
+  }
+
 }
 
 @media (max-width: 398px){
@@ -252,6 +321,29 @@ html{
 
   .text-shadow{
     font-size: 35px;
+  }
+
+  .custom_width{
+    width: 320px;
+  }
+
+  .custom_responsive{
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    padding-left: 1rem;
+  }
+
+}
+
+
+@media (max-width: 370px){
+
+  .custom_width{
+    display: grid;
+    place-items: center;
+    place-content: center;
+    width: 280px;
   }
 
 }

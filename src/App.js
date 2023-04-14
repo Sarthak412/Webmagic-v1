@@ -1,5 +1,6 @@
 import './App.css';
 import About from './components/About';
+import Blog from './components/Blog';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Services from './components/Services';
@@ -9,8 +10,9 @@ function App() {
     <div className="App">
       <Navbar logo="Webmagic" link_1="About" link_2="Services" link_3="Blog" link_4="Contact"/>
       <Hero/>
-      <About id="about" />
+      <About />
       <Services/>
+      <Blog />
     </div>
   );
 }

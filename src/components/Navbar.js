@@ -23,7 +23,10 @@ const Navbar = (props) => {
                             <li className='hover:bg-gradient-to-t from-blue-950 to-indigo-300 p-3'> {props.link_1} </li>
                         </Link>           
                         
-                        <li className='hover:bg-gradient-to-t from-blue-950 to-indigo-300 p-3'> {props.link_2} </li>
+                        <Link to='#services'>
+                            <li className='hover:bg-gradient-to-t from-blue-950 to-indigo-300 p-3'> {props.link_2} </li>
+                        </Link>
+                        
                         <li className='hover:bg-gradient-to-t from-blue-950 to-indigo-300 p-3'> {props.link_3} </li>
                         <li className='hover:bg-gradient-to-t from-blue-950 to-indigo-300 p-3'> {props.link_4} </li>
                     </ul>
