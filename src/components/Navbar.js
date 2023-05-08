@@ -32,7 +32,7 @@ const Navbar = (props) => {
                     </ul>
                 <GiHamburgerMenu onClick={() => setToggle(!toggle)} size={25} className='burger-icon cursor-pointer hover:bg-blue-700'/>
                     {toggle && ( 
-                    <ul className='flex-column bg-black w-full absolute mt-[49px] mx-[-1px] text-[14px] p-4 space-y-4 shadow-lg cursor-pointer custom_drop'>
+                    <ul data-aos="fade-down" className='flex-column bg-black w-full absolute mt-[49px] mx-[-1px] text-[14px] p-4 space-y-4 shadow-lg cursor-pointer custom_drop'>
                         <Link to='#about'>
                             <li className='hover:bg-gradient-to-t from-blue-900 to-indigo-300 p-3'> {props.link_1} </li>
                         </Link>
